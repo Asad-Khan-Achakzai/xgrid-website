@@ -1,0 +1,89 @@
+/*
+ Copyright (c) 2023, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+.react-multiple-carousel__arrow--left::before {
+  content: url(../../public/images/custom-left-btn.svg) !important;
+}
+.react-multiple-carousel__arrow--right::before {
+  content: url(../../public/images/custom-left-btn.svg) !important;
+  transform: rotate(180deg);
+}
+.react-multiple-carousel__arrow {
+  transform: scale(.8);
+  position: absolute;
+  transition: all .5s;
+  line-height: 0;
+  z-index: 1000;
+  border: none;
+  border-radius: 3rem;
+  background-color: rgba($color: $x96-mirage, $alpha: 0.65) !important;
+  background: none;
+  width: auto !important;
+  height: auto !important;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  &:hover {
+    background-color: $x96-mirage !important;
+  }
+}
+
+.react-multi-carousel-list {
+  position: static !important;
+}
+
+@include media(">=desktop") {
+  .container-with-dots {
+    margin-top: -4rem;
+  }
+}
+
+.container-with-dots{
+  margin-right: -4rem;
+  .react-multiple-carousel__arrow--left {
+    left: 38%;
+  }
+  .seperator-case-studies {
+    color: rgba(255,255,255, .2);
+  }
+  .accomplished {
+    color: white;
+    font-size: 0.7rem;
+  }
+  .case-studies {
+    height: 11.4rem;
+    padding-left: .5rem;
+  }
+  .case-studies-images {
+    img {
+      height: 11rem;
+    }
+  }
+}
+
+.animation-start {
+  animation: animate-slide 1s ease-in-out forwards;
+}
+
+@keyframes animate-slide {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

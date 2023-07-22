@@ -1,0 +1,132 @@
+/*
+ Copyright (c) 2023, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+#alkira-section-1-main-wrapper {
+  background-color: $x96-alkira-blue;
+  padding-bottom: 14rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#alkira-section-2-main-wrapper {
+  background-color: $x96-mirage;
+}
+.mainDiv {
+  overflow-x: hidden;
+}
+#alkira-section-4-main-wrapper {
+  background-color: $x96-mirage;
+  padding: 6rem 0;
+  .content-wrapper {
+    .typography-main-wrapper {
+      .d-flex {
+        padding-top: 5rem;
+      }
+      .separator {
+        border-top: 1px solid rgba($x96-dust-gray, $alpha: 0.2);
+        width: 13rem;
+        margin: 0.85rem 2rem;
+      }
+      .typography-indicator {
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  .color-palette {
+    p {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+#alkira-section-7-main-wrapper {
+  background-color: $x96-mirage;
+  padding: 12rem 0 0 3rem;
+  .marketing-collateral-wrapper {
+    p {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+    }
+    .marketing-collateral-slider-wrapper {
+      transform: translateX(2.75rem);
+    }
+  }
+}
+
+#alkira-section-8-main-wrapper {
+  background-color: $x96-mirage;
+  padding: 6rem 0 0;
+  .content-wrapper {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  .slider-component-wrapper {
+    padding-bottom: 6rem;
+  }
+  .react-multiple-carousel__arrow--left::before,
+  .react-multiple-carousel__arrow--right::before {
+    border: 1.5px solid $x96-alkira-blue;
+    border-radius: 100%;
+  }
+  .video-component-wrapper {
+    padding-top: 8rem;
+  }
+}
+
+#alkira-section-9-main-wrapper {
+  padding: 6rem 0;
+  .content-wrapper {
+    h2 {
+      font-size: 2.5rem;
+    }
+    .content-inner-wrapper {
+      padding: 0 2.5rem;
+    }
+  }
+}
+
+#alkira-section-10-main-wrapper {
+  background-color: $x96-mirage;
+}
+
+#alkira-section-11-main-wrapper {
+  padding: 6rem 0;
+}
+
+#alkira-section-12-main-wrapper {
+  background-color: $x96-mirage;
+}
+
+#alkira-section-13-main-wrapper {
+  background-image: url(../../../../public/images/cloud-next-portfolio-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 599px) {
+  #alkira-section-1-main-wrapper
+    .casestudy-header-wrapper
+    .container-880
+    .container-inner-wrapper
+    .content-wrapper
+    h1 {
+    text-align: center;
+  }
+}

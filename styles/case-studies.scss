@@ -1,0 +1,391 @@
+/*
+ Copyright (c) 2022, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+//Styles imports
+@import './theme.scss';
+
+p {
+  color: $xgrid-black !important;
+}
+small {
+  font-size: 0.8rem !important;
+}
+.case-study-card {
+  box-shadow: 0 0.5rem 1.375rem $xgrid-lighter-black;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 14.5rem;
+  background: URL('../public/images/case-studies/randomCurves.png');
+  background-color: $xgrid-darker-white;
+}
+.case-study-card-about-us {
+  background: URL('../public/images/case-studies/randomCurves-lg.png');
+  background-color: $xgrid-darker-white;
+}
+.container {
+  color: $xgrid-black;
+}
+.form-box {
+  width: 22.813rem;
+  min-height: 28rem;
+  padding: 2rem;
+  background: $xgrid-white;
+  box-shadow: 0px 0.927rem 1.348rem rgba(18, 39, 69, 0.08);
+  border-radius: 1.348rem;
+}
+.form-heading {
+  font-family: 'Lato-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.813rem;
+  color: $xgrid-black;
+}
+@include media('<desktop-sm') {
+  .img-container-sm {
+    position: relative;
+    text-align: center;
+    min-height: 28rem;
+  }
+  .gated-hero-heading-sm {
+    font-family: 'Lato-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.253rem;
+    line-height: 120%;
+  }
+  .gated-h3-sm {
+    font-family: 'Inter-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 140%;
+  }
+}
+
+@include media('>=phone','<desktop-sm') {
+  .hero-form-sm {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@include media('<phone') {
+  .hero-form-sm {
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+  }
+}
+@include media('>=desktop-sm', '<=desktop-xl') {
+  .hero-form {
+    position: absolute;
+    left: 46%;
+    top: 48%;
+    transform: translate(-22%, -50%);
+  }
+}
+@include media('>desktop-xl') {
+  .hero-form-xxl {
+    position: absolute;
+    left: 69%;
+    top: 48%;
+    transform: translate(-22%, -50%);
+  }
+}
+@include media('<tablet-sm') {
+  .image-sm {
+    max-width: 25.813rem;
+    display: inline-table;
+  }
+}
+@include media('>=tablet') {
+  .img-container {
+    position: relative;
+    display: inline-block;
+    min-height: 28rem;
+  }
+
+  .gated-hero-heading {
+    font-family: 'Lato-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.75rem;
+    line-height: 120%;
+  }
+  .gated-h3 {
+    font-family: 'Inter-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: $xgrid-black;
+  }
+  .practice-desc {
+    font-family: 'Inter-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 3.125rem;
+    color: $xgrid-black;
+  }
+}
+.black-star {
+  position: absolute;
+  left: 1%;
+  top: 68%;
+  transform: translate(-22%, -343%);
+}
+.inner-container {
+  margin: 0 auto;
+}
+.line {
+  margin: 5rem 0;
+  border-bottom: 0.5px solid $xgrid-black;
+}
+.btn-group-icon {
+  width: 6.875rem;
+  height: 2.188rem;
+}
+.round-corner-container {
+  padding: 3rem;
+  border-radius: 1.25rem;
+}
+@include media('>=tablet') {
+  .h-23 {
+    height: 23rem;
+  }
+}
+.case-study-card-best-practice {
+  background: URL('../public/images/case-studies/randomCurves-full.png');
+  background-color: $xgrid-pastel-green;
+}
+.case-study-card-best-practice-yellow-bg {
+  background: URL('../public/images/case-studies/randomCurves-full.png');
+  background-color: $xgrid-pastel-yellow;
+}
+.curve-bg-yellow {
+  background: URL('../public/images/case-studies/randomCurves-full-light.png');
+  background-color: $xgrid-black;
+  background-blend-mode: overlay;
+}
+.curve-bg-light-black {
+  background: URL('../public/images/case-studies/randomCurves-full-light.png');
+  background-color: $xgrid-black;
+  background-blend-mode: overlay;
+}
+.case-study-card-best-practice-dark-blue {
+  background: URL('../public/images/case-studies/randomCurves-full.png');
+  background-color: $xgrid-dark-blue;
+  background-blend-mode: darken;
+}
+.case-study-card-best-practice-light-green {
+  background: URL('../public/images/case-studies/randomCurves-full.png');
+  background-color: $xgrid-green-light;
+  background-blend-mode: darken;
+}
+.practices-list {
+  p {
+    color: $xgrid-black;
+  }
+}
+.client-logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+// TODO: contents of the class will be updated and moved to a common class
+.practice-title {
+  font-family: 'Lato-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.688rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: $xgrid-black;
+}
+.star-list-item {
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  li::before {
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.8rem;
+    margin-right: 10px;
+    background-image: url('../public/images/icons/black-star.svg');
+  }
+}
+.cta-group {
+  cursor: pointer;
+  .cta-group-btn-label {
+    &:hover {
+      color: $xgrid-purple;
+      font-size: 1rem;
+    }
+  }
+}
+.outcome-img-wrapper {
+  width: 4.188rem;
+}
+.copy-text {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  input {
+    width: 80%;
+  }
+  .copy-text-icon {
+    width: 2rem;
+    padding: 5px;
+    span {
+      width: 100% !important;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+@include media('>tablet') {
+  .mask-p {
+    justify-content: end;
+  }
+}
+.report-percentage {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.375rem;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: $xgrid-black;
+}
+.report-heading {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: $xgrid-black;
+}
+.report-description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+.report-title {
+  font-family: 'Lato-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.938rem;
+  display: inline;
+  color: $xgrid-black;
+}
+
+.half_background {
+  background: linear-gradient(
+    to top,
+    $xgrid-pastel-green-light 30%,
+    transparent -103%
+  );
+}
+.half_background_pastel_yellow {
+  background: linear-gradient(
+    to top,
+    $xgrid-pastel-yellow 30%,
+    transparent -103%
+  );
+}
+.half_background-dark-blue {
+  background: linear-gradient(to top, $xgrid-dark-blue 9%, transparent -103%);
+}
+.mask-container {
+  position: relative;
+}
+.half_background-light-green {
+  background: linear-gradient(
+    to top,
+    $xgrid-green-light 30%,
+    transparent -103%
+  );
+}
+.left-mask {
+  position: absolute;
+  left: -10%;
+  top: 47%;
+  transform: translate(-36%, -50%);
+  max-width: 4rem;
+}
+
+.about-us-heading {
+  font-family: 'Lato-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+.about-us-description {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 176%;
+}
+ul {
+  margin-left: 120px;
+
+  li {
+    margin: 0 20px;
+
+    a {
+      color: $xgrid-black;
+      text-decoration: none;
+    }
+  }
+}
+.active-link {
+  font-weight:800;
+  color: $xgrid-black;
+  border-bottom: 0.2rem solid $xgrid-purple;
+  padding: 7px 0px;
+}
+.links {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: center;
+  font-size: 1.25rem;
+  .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+}

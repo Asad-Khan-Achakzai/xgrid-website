@@ -1,0 +1,112 @@
+/*
+ Copyright (c) 2023, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+// Color Palette
+$xgrid-purple: #6f63de;
+$xgrid--dark-purple: #7b40a0;
+$xgrid-dark-blue: #1e5dff;
+$xgrid-black: #000000;
+$xgrid-light-grey: #fbfcfd;
+$xgrid-half-white: #dee2e6;
+$xgrid-green: #71c9b9;
+$xgrid-forest-green: #19a842;
+$xgrid-pastel-green: #49e776;
+$xgrid-pastel-green-light: #6ef193;
+$xgrid-green-light: #28e7ba;
+$xgrid-yellow: #ffa114;
+$xgrid-light-yellow: #e9b937;
+$xgrid-pastel-yellow: #ffd754;
+$xgrid-white: #ffffff;
+$xgrid-darker-white: #f9f9f9;
+$xgrid-lighter-black: #25293114;
+$xgrid-mercury: #e2e2e2;
+$xgrid-mystic: #e5eaee;
+$xgrid-button-grey: #737373;
+$xgrid-lighter-grey: #8c8c8c;
+$xgrid-dark-purple: #262434;
+$xgrid-greyish-purple: #3d3a52;
+$xgrid-dark-grey: #272d3d;
+$xgrid-blop-paragraph-grey: #333333;
+$xgrid-download-blue: #2251FF;
+$xgrid-slate: #f9f9fc;
+
+$breakpoints: (
+        'phone': 320px,
+        'tablet': 768px,
+        'desktop': 1024px
+) !default;
+
+// Color Palette
+$x96-tundora: #464444;
+$x96-orange: #FF6441;
+$xg-flamingo: #F45632;
+$xg-pomegranate: #F14813;
+$x96-cinnabar: #E74242;
+$x96-mirage: #181B23;
+$x96-fm-red: #E31837;
+$x96-doc-pink: #FF5370;
+$x96-usis-blue: #2B75FF;
+$x96-usis-grey: #68737A;
+$x96-pel-blue: #00A3FF;
+$x96-alkira-blue: #006DF0;
+$x96-eastern-blue: #1986A9;
+$x96-pelorous: #3FC1C9;
+$x96-bright-turquoise: #14BFE4;
+$x96-dodger-blue: #4692FF;
+$x96-blue-ribbon: #0069FF;
+$x96-electric-violet: #C112FF;
+$x96-bunker: #151820;
+$x96-fair-pink: rgba(255, 236, 232, 0.0772236);
+$x96-shark: #2A2B32;
+$x96-dark-purple: #0a034e;
+$x96-dark-grey: #1A1A1F;
+$x96-cream-white: #FFECE8;
+$x96-dust-gray: #979797;
+$x96-alkira-black: #122131;
+$x96-alkira-orange: #FB9827;
+$x96-cream-can: #F2C94C;
+$x96-tea-pink: #FF55A5;
+$x96-clementine: #E96E00;
+$x96-monza: #D40047;
+$x96-cerulean: #0086AA;
+$x96-aqua: #00FFDE;
+$x96-cyan: #00DEFF;
+$x96-fountain-blue: #49B8BF;
+$x96-vulcan: #0E111A;
+
+/**
+* GRADIENTS
+**/
+
+// Orange gradient
+$x96-orange-gradient: 91.21deg, $x96-orange 0%, $xg-flamingo 100%;
+
+// Cyan blue gradient
+$x96-cyan-blue-gradient: -90.75deg, $x96-fountain-blue 7.46%, $x96-eastern-blue 110.1%;
+
+// Cyan blue gradient with different orientation
+$x96-cyan-blue-gradient2: 132.99deg, $x96-fountain-blue 12.01%, $x96-eastern-blue 79.74%;
+
+// Blue gradient
+$x96-blue-gradient: 127.54deg, $x96-dodger-blue 5.15%, $x96-blue-ribbon 96.27%;
+
+// Radial gradients
+$x96-button-radial-gradient: 100% 6530.65% at 100% 100%, $x96-bright-turquoise 0%, $x96-electric-violet 55.21%, $xg-pomegranate 100%;
+
+// Linear gradients
+$x96-button-linear-gradient: 91.11deg, $x96-clementine 0.17%, $x96-monza 51.65%, $x96-cerulean 100%;
+$x96-fade-linear-gradient: 90deg, rgba(255,85,165,0.75) 0%, rgba(81,88,255,0.75) 35%, rgba(0,255,222,0.75) 62%, rgba(0,222,255,0.75) 100%;
+$x96-hover-button-linear-gradient: 267.13deg, $x96-tea-pink -13.52%, $x96-monza 49.52%, $x96-aqua 108.75%

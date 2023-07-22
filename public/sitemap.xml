@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.xgrid.co/</loc>
+  <lastmod>2022-07-28T20:51:09+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.xgrid.co/cloud-devops-services/</loc>
+  <lastmod>2022-07-28T20:52:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.xgrid.co/web-mobile-app-development/</loc>
+  <lastmod>2022-07-28T20:52:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.xgrid.co/company/</loc>
+  <lastmod>2022-07-28T20:52:24+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.xgrid.co/careers/</loc>
+  <lastmod>2022-07-28T20:52:24+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.xgrid.co/resources/</loc>
+  <lastmod>2022-07-28T20:52:24+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.xgrid.co/privacy-policy/</loc>
+  <lastmod>2022-07-28T20:52:22+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://www.xgrid.co/information-security-policy/</loc>
+  <lastmod>2022-07-28T20:52:20+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://www.xgrid.co/terms-and-conditions/</loc>
+  <lastmod>2022-07-28T20:52:20+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+
+</urlset>

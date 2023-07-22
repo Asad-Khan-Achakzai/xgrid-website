@@ -1,0 +1,159 @@
+/*
+ Copyright (c) 2022, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+//Importing fonts
+
+@font-face {
+  font-family: 'Amanda';
+  src: url('../public/fonts/amandasignature.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../public/fonts/Inter-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Semi-Bold';
+  src: url('../public/fonts/Inter-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('../public/fonts/Inter-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('../public/fonts/Inter-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Black';
+  src: url('../public/fonts/Inter-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../public/fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../public/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../public/fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('../public/fonts/Inter-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'FreightTextProBold-Regular';
+  src: url('../public/fonts/FreightTextProBold-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('../public/fonts/Georgia.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url('../public/fonts/HelveticaNeue-Light.ttf');
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Medium';
+  src: url('../public/fonts/HelveticaNeue-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../public/fonts/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Eina-Regular';
+  src:  url('../public/fonts/Eina01-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Eina-Bold';
+  src:  url('../public/fonts/Eina01-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Eina-SemiBold';
+src:  url('../public/fonts/Eina01-SemiBold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Poppins-Regular';
+src:  url('../public/fonts/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Poppins-Bold';
+src:  url('../public/fonts/Poppins-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Roboto-Regular';
+src:  url('../public/fonts/Roboto-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Xgrid-Regular';
+  src: url('../public/fonts/XgridSans-Regular-normal.otf');
+}
+@font-face {
+  font-family: 'Xgrid-Light-Italic';
+  src: url('../public/fonts/XgridSans-Light-italic.otf');
+}
+@font-face {
+  font-family: 'Xgrid-Light';
+  src: url('../public/fonts/XgridSans-Light-normal.otf');
+}
+@font-face {
+  font-family: 'Xgrid-Medium';
+  src: url('../public/fonts/XgridSans-Medium-normal.otf');
+}
+
+@font-face {
+  font-family: 'Bower';
+  src:  url('../public/fonts/Bower.ttf');
+}
+
+.amanda-font {
+  font-family: 'Amanda';
+}
+
+.font-footer{
+  font-size: 0.875rem;
+}
+
+// between 576 and 1024
+@include media(">=tablet-sm", "<desktop-sm") {
+  .font-footer{
+    font-size: 0.625rem;
+  }
+}

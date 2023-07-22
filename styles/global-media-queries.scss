@@ -1,0 +1,131 @@
+/*
+ Copyright (c) 2023, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+//Will be used when working on responsiveness
+@import 'theme';
+@import 'mixins';
+
+@include media('>=desktop-lg', '<=desktop-xl') {
+  #satisfied-customer {
+    .customer-heading {
+      font-size: 6.5rem;
+    }
+  }
+  .w-85 {
+    width: 85%;
+  }
+}
+@include media('<=desktop-lg') {
+  #satisfied-customer {
+    .customer-heading {
+      font-size: 5.875rem !important;
+      line-height: 12.375rem !important;
+    }
+  }
+  #globe-container .brilliance-sub-text {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+  #client-container .client-container-text {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+}
+@include media('>=tablet', '<=desktop-lg') {
+  .no-padding-md {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  html {
+    font-size: 15px !important;
+  }
+  .w-md-50 {
+    width: 50%;
+  }
+  .h1-internal {
+    font-size: 3rem !important;
+    line-height: 3.125rem !important;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    color: $xgrid-black;
+  }
+}
+@include media('>=phone', '<=tablet-sm') {
+  #satisfied-customer {
+    .customer-heading {
+      font-size: 3.437rem !important;
+      line-height: 4.5rem !important;
+    }
+  }
+}
+// 768
+@include media('>=phone', '<=tablet') {
+  // Defualt fontSizes for Tablet screens
+  .h1-internal {
+    font-size: 3rem !important;
+    line-height: 3.125rem !important;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    color: $xgrid-black;
+  }
+}
+
+// 576
+@include media('>=phone-xs', '<tablet-sm') {
+  html {
+    font-size: 12px !important;
+  }
+  .no-padding-sm {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  #footer-container .footer-text {
+    margin-right: 0;
+  }
+  #customer-container .customer-heading {
+    font-size: 3.437rem !important;
+    line-height: 3.75rem !important;
+  }
+  .h1-internal {
+    font-size: 2.5rem !important;
+    line-height: 105% !important;
+    text-align: left !important;
+  }
+}
+@include media('>=phone-xs', '<=phone') {
+  #satisfied-customer {
+    .customer-heading {
+      font-size: 2rem !important;
+      line-height: 60px !important;
+    }
+  }
+}
+@include media('<phone-xs') {
+  #satisfied-customer {
+    .customer-heading {
+      font-size: 2rem !important;
+      line-height: 3.75rem !important;
+    }
+  }
+}

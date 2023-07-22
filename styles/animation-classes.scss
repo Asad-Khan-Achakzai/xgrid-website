@@ -1,0 +1,126 @@
+/**
+ Copyright (c) 2020, Xgrid Inc, https://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+.start-anim-transform-up {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  transition: all .5s ease-in-out;
+}
+
+.initial-opacity-transform-block {
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.initial-opacity-transform {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.services-testimonial {
+  .testimonial-border {
+    width: 4px;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    transition: all .5s ease-in-out;
+  }
+
+  p {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    transform: translateY(20px);
+  }
+
+  .client-img-bio-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all .5s ease-in-out;
+  }
+}
+
+.testimonials-animation {
+  .testimonial-border {
+    height: 100% !important;
+    transition: all .5s ease-in-out;
+  }
+
+  p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .client-img-bio-wrapper {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.nav--default {
+  visibility: visible;
+  transition: all 500ms ease-in;
+  transform: translate(0, 30%);
+}
+
+.nav--top {
+  visibility: hidden;
+  transition: all 500ms ease-out;
+  transform: translate(0, -100%);
+}
+
+.subnav-top-wrapper {
+  .subnav--top {
+    visibility: hidden !important;
+    transition: all 500ms ease-out !important;
+    transform: translate(0, -100%) !important;
+  }
+}
+
+.subnav--default {
+  visibility: visible !important;
+  transition: all 500ms ease-in !important;
+  transform: translate(0, 0%) !important;
+}
+
+.shapes-vert-move {
+  -webkit-animation: mover 3s infinite  alternate;
+  animation: mover 3s infinite  alternate;
+}
+
+.spin-object {
+  -webkit-animation: spin 50s infinite;
+  animation: spin 50s infinite;
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(1rem); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(1rem); }
+}
+
+@-webkit-keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg); }
+}

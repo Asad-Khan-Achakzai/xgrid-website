@@ -1,0 +1,55 @@
+# Use this file to configure the Overcommit hooks you wish to use. This will
+# extend the default configuration defined in:
+# https://github.com/sds/overcommit/blob/master/config/default.yml
+
+CommitMsg:
+  GerritChangeId:
+    enabled: true
+    description: 'Ensure Gerrit Change-Id is present'
+    required: true
+  RussianNovel:
+    enabled: true
+    description: 'Check length of commit message'
+    quiet: true
+  SingleLineSubject:
+    enabled: true
+    description: 'Check subject line'
+  TextWidth:
+    enabled: true
+    description: 'Check text width'
+    max_subject_width: 60
+    max_body_width: 72
+  TrailingPeriod:
+    enabled: true
+    description: 'Check for trailing periods in subject'
+PreCommit:
+  JsonSyntax:
+    enabled: true
+    description: 'Validate JSON syntax'
+    required_library: 'json'
+    install_command: 'gem install json'
+    include: '**/*.json'
+  MergeConflicts:
+    enabled: true
+    description: 'Check for merge conflicts'
+    quiet: true
+    required_executable: 'grep'
+    flags: ['-IHn', "^<<<<<<<[ \t]"]
+  TrailingWhitespace:
+    enabled: false
+    description: 'Check for trailing whitespace'
+    required_executable: 'grep'
+    flags: ['-IHn', "[ \t]$"]
+  EsLint:
+    enabled: false
+    description: 'Analyze with EsLint'
+    required_executable: 'npm'
+    command: ['npm', 'run', 'lint', '--', '-f', 'compact']
+  ScssLint:
+    enabled: false
+    description: 'Analyze with scss-lint'
+    required_library: 'json'
+    required_executable: 'scss-lint'
+    flags: ['--format', 'JSON']
+    install_command: 'gem install scss_lint'
+    include: '**/*.scss'

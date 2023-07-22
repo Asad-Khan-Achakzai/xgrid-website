@@ -1,0 +1,329 @@
+/*
+ Copyright (c) 2023, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+@include media('>600px', '<960px') {
+  #alkira-section-1-main-wrapper {
+    .casestudy-header-wrapper .container-fluid {
+      padding-top: 7rem !important;
+    }
+    .casestudy-header-wrapper .container-fluid .justify-content-center {
+      justify-content: left !important;
+    }
+  }
+  #alkira-section-2-main-wrapper {
+    .portfolio-main-image-wrapper {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+    #component-design-1-main-wrapper
+      .container-880
+      .content-wrapper-flex-bordered-items {
+      padding: 3rem 1.5rem !important;
+    }
+    .container {
+      margin: auto !important;
+    }
+  }
+  #alkira-section-4-main-wrapper {
+    .container-880 {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+  #alkira-section-7-main-wrapper {
+    padding: 2rem 0 0 3rem !important;
+  }
+  #alkira-section-8-main-wrapper .container-880 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+  #alkira-section-9-main-wrapper {
+    padding: 6rem 1.5rem !important;
+  }
+  #alkira-section-10-main-wrapper p {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+  #alkira-section-11-main-wrapper .container-880 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+}
+@include media('320', '<=desktop') {
+  .nav--default {
+    visibility: visible !important;
+  }
+}
+@include media('320', '<600px') {
+  #alkira-section-1-main-wrapper .casestudy-header-wrapper {
+    .container-fluid .justify-content-between {
+      justify-content: center !important;
+    }
+    .container-880 .container-inner-wrapper .content-wrapper {
+      h1 {
+        text-align: center;
+      }
+      .project-details {
+        p {
+          font-size: 12px;
+        }
+        .align-items-center {
+          justify-content: center !important;
+        }
+      }
+      .services-details {
+        .d-flex {
+          flex-wrap: wrap;
+        }
+        .align-items-center {
+          justify-content: center !important;
+        }
+      }
+      .pt-4 {
+        text-align: center !important;
+      }
+    }
+  }
+  .component-design-1-sm-wrapper-alkira {
+    .design-details,
+    .design-services {
+      .d-flex {
+        flex-wrap: wrap;
+      }
+    }
+    .design-services {
+      .d-flex {
+        row-gap: 12px;
+      }
+    }
+    .design-details .title p {
+      font-family: 'Eina-Bold' !important;
+      font-size: 1rem !important;
+    }
+    .portfolio-main-image-wrapper {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    #component-design-1-main-wrapper
+      .content-wrapper-flex-bordered-items
+      .design-details
+      .d-flex
+      .details {
+      width: auto !important;
+    }
+    #component-design-1-main-wrapper
+      .container-880
+      .content-wrapper-flex-bordered-items
+      .design-details-0 {
+      padding: 1rem 1rem !important;
+    }
+    #component-design-1-main-wrapper
+      .container-880
+      .content-wrapper-flex-bordered-items
+      .design-details-1 {
+      padding: 0rem 1rem !important;
+    }
+  }
+
+  .trigger-second-section-content .typography-indicator h5 {
+    font-size: 14px;
+  }
+  .trigger-second-section-content .typography-indicator p {
+    font-size: 9px !important;
+  }
+  .trigger-second-section-content .width-sm-auto {
+    width: auto !important;
+  }
+  .trigger-second-section-content .w-75 h4 {
+    font-size: 1rem;
+  }
+  .trigger-second-section-content .w-75 p {
+    font-size: 0.6rem;
+  }
+
+  #alkira-section-4-main-wrapper
+    .content-wrapper
+    .typography-main-wrapper
+    .px-sm-0
+    .separator {
+    width: 8rem;
+    margin: 0.85rem 1rem;
+  }
+  #alkira-section-4-main-wrapper
+    .content-wrapper
+    .typography-main-wrapper
+    .px-sm-0
+    .seperator-sm-width {
+    width: 44rem !important;
+  }
+  .container .d-sm-hidden {
+    display: none !important;
+  }
+  .d-sm-hidden {
+    display: none !important;
+  }
+  .container .d-sm-visible {
+    display: block !important;
+  }
+
+  #alkira-section-4-main-wrapper {
+    .d-sm-visible {
+      display: block !important;
+    }
+    .social-media-content-wrapper {
+      .d-flex {
+        flex-wrap: wrap;
+      }
+      .w-25 {
+        width: auto !important;
+      }
+      .w-65 {
+        width: auto !important;
+      }
+    }
+    .collage-img-sm {
+      width: 150% !important;
+      margin-left: -14%;
+      margin-bottom: 40px;
+    }
+  }
+  #alkira-section-5-main-wrapper .row {
+    flex-direction: column-reverse;
+  }
+  #alkira-section-5-main-wrapper .trigger-section-content {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+  #alkira-section-7-main-wrapper {
+    padding: 0 0 0 0 !important;
+  }
+  #alkira-section-7-main-wrapper {
+    .text-center {
+      padding-right: 2rem !important;
+      padding-left: 2rem !important;
+    }
+    .col-lg-7 {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+    .row {
+      padding-bottom: 1rem !important;
+    }
+    .marketing-collateral-wrapper {
+      width: auto !important;
+    }
+    .react-multi-carousel-list .react-multi-carousel-track li {
+      width: 261px !important;
+    }
+  }
+  #alkira-section-8-main-wrapper {
+    padding: 6rem 0rem !important;
+  }
+  #alkira-section-8-main-wrapper {
+    .trigger-section-content {
+      padding-right: 2rem !important;
+      padding-left: 2rem !important;
+    }
+    .pl-sm-0 {
+      padding-left: 0 !important;
+    }
+    .react-multi-carousel-list .react-multi-carousel-track li {
+      width: 352px !important;
+    }
+    .content-wrapper {
+      h2 {
+        font-size: 1.5rem !important;
+        text-align: left !important;
+      }
+      p {
+        text-align: left !important;
+      }
+    }
+    .video-component-wrapper {
+      p {
+        font-size: 1.3rem !important;
+      }
+      .video-content-wrapper {
+        padding-left: 2rem !important;
+      }
+    }
+  }
+  #alkira-section-9-main-wrapper {
+    padding: 6rem 2rem !important;
+  }
+  #alkira-section-9-main-wrapper {
+    .content-wrapper .content-inner-wrapper {
+      padding: 0 !important;
+    }
+  }
+  #alkira-section-10-main-wrapper {
+    padding: 0 2rem !important;
+  }
+  #alkira-section-10-main-wrapper {
+    .doc-content-animation-trigger h2 {
+      font-size: 1.5rem !important;
+      text-align: left !important;
+    }
+    .doc-content-animation-trigger p {
+      text-align: left !important;
+    }
+    .doc-img-animation-trigger img {
+      height: 130px;
+    }
+  }
+  #alkira-section-11-main-wrapper {
+    padding: 6rem 2rem !important;
+  }
+  #alkira-section-11-main-wrapper {
+    .content-wrapper .pl-2rem {
+      padding-left: 0 !important;
+    }
+  }
+  #alkira-section-12-main-wrapper {
+    padding: 0 2rem;
+  }
+  .container .px-sm-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .px-sm-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .mx-sm-0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  #alkira-section-4-main-wrapper {
+    padding: 0 2rem !important;
+  }
+  .trigger-second-section-content .px-sm-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .component-design-1-sm-wrapper-alkira .services-elements-trigger {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .component-design-1-sm-wrapper-alkira .design-services .d-flex {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .component-design-1-sm-wrapper-alkira .design-services p {
+    font-size: 0.6rem !important;
+  }
+}

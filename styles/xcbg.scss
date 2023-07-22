@@ -1,0 +1,944 @@
+/*
+ Copyright (c) 2023, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+//Styles imports
+@import "./theme.scss";
+@import "./fonts.scss";
+@import "./mixins.scss";
+
+//Global media queries imports
+@import "./global-media-queries";
+
+.card-box {
+  background: $xgrid-white;
+  box-shadow: 0px 8px 22px rgb(37 41 49 / 12%);
+  border-radius: 8px;
+  padding: 3.188rem 2.563rem;
+  width: 22.5rem;
+  margin: 10px;
+}
+.img-container-aws-desktop {
+  position: relative;
+  background-image: url("../public/images/xwmg-banner-img-5.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 32rem;
+  width: auto;
+}
+.img-container-app-desktop {
+  position: relative;
+  background-image: url("../public/images/xwmg-banner-img-6.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 32rem;
+  width: auto;
+}
+.text-container {
+  position: absolute;
+  top: 6rem;
+  right: 17rem;
+}
+.text-container-app {
+  position: absolute;
+  top: 6rem;
+  left: 14rem;
+}
+.tech-stack-cloud {
+  width: 21rem;
+  margin: 1.375rem 1.688rem;
+}
+.tech-stack {
+  margin: 1.375rem 1.688rem;
+}
+.app-dev-des,
+.aws-team-des {
+  width: 25rem;
+  margin: 1.375rem 1.688rem 1.375rem 0;
+}
+.title-tag {
+  width: 16rem;
+  margin: 0px 0px 6px 0px;
+}
+.title-tag-app {
+  width: 26rem;
+  margin: 0px 0px 6px 0px;
+}
+.arrow-spacing {
+  padding: 5px 15px;
+}
+.customer-review {
+  margin: 7rem;
+}
+.customer-text-wrapper {
+  padding: 1.5rem 0;
+  margin-bottom: 0.5rem;
+}
+.container-py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+// Media Queries
+@include media(">desktop-xl") {
+  .text-container {
+    top: 6rem !important;
+    right: 20rem !important;
+  }
+  .text-container-app {
+    top: 6rem !important;
+    left: 20rem !important;
+  }
+  .img-container-aws-desktop {
+    height: 33rem !important;
+  }
+  .img-container-app-desktop {
+    height: 33rem !important;
+  }
+  .tech-stack-icon-text {
+    margin-top: 3rem;
+    padding-top: 0.25rem;
+  }
+  .tech-title {
+    margin-left: 3rem;
+  }
+  .color-rate {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+  .tech-responsive-row-none{
+    display: none !important;
+  }
+}
+//between 1441px to <=2000px
+@include media(">desktop-lg", "<=desktop-xl") {
+  .text-container {
+    top: 6rem !important;
+    right: 10rem !important;
+  }
+  .text-container-app {
+    top: 6rem !important;
+    left: 10rem !important;
+  }
+  .tech-stack-icon-text {
+    margin-top: 3rem;
+    padding-top: 0.25rem;
+  }
+  .customer-text-wrapper {
+    font-size: 1.875rem;
+  }
+  .banner-sub-text {
+    width: 36rem;
+  }
+  .tech-responsive-row-none{
+    display: none !important;
+  }
+}
+//between 1281px to <=1441px
+@include media(">desktop-md", "<=desktop-lg") {
+  .text-container {
+    top: 6rem !important;
+    right: 10rem !important;
+  }
+  .text-container-app {
+    top: 6rem !important;
+    left: 10rem !important;
+  }
+  .tech-stack-icon-text {
+    margin-top: 3rem;
+    padding-top: 0.25rem;
+  }
+  .customer-text-wrapper {
+    font-size: 1.875rem;
+  }
+  .banner-sub-text {
+    width: 36rem;
+  }
+  .tech-responsive-row-none{
+    display: none !important;
+  }
+}
+.right-bubble {
+  right: 0rem;
+  top: 4.125rem;
+  position: absolute;
+}
+
+@include media(">desktop-xl") {
+  .circles-animation-xcbg {
+    top: 10rem;
+    right: 8rem;
+    z-index: 100;
+  }
+  .circle-design {
+    right: 7rem;
+    top: 8.125rem;
+    position: absolute;
+  }
+}
+
+@include media(">desktop-lgx", "<=desktop-xl") {
+  .circles-animation-xcbg {
+    top: 10rem;
+    right: 8rem;
+    z-index: 100;
+  }
+  .circle-design {
+    right: 7rem;
+    top: 8.125rem;
+    position: absolute;
+  }
+}
+
+@include media(">desktop-lg", "<=desktop-lgx") {
+  .circles-animation-xcbg {
+    top: 14rem;
+    right: 8rem;
+    z-index: 100;
+  }
+  .circle-design {
+    right: 7rem;
+    top: 8.125rem;
+    position: absolute;
+  }
+}
+
+@include media(">desktop-md", "<=desktop-lg") {
+  .circles-animation-xcbg {
+    top: 16rem;
+    right: 3rem;  
+    z-index: 100;
+  }
+  .circle-design {
+    right: 7rem;
+    top: 8.125rem;
+    position: absolute;
+  }
+}
+//between 1024px to <=1281px
+@include media(">desktop-sm", "<=desktop-md") {
+  .text-container {
+    top: 2rem !important;
+    right: 1rem !important;
+  }
+  .circle-design {
+    right: 7rem;
+    top: 8.125rem;
+    position: absolute;
+  }
+
+  .circles-animation-xcbg {
+    top: 7rem;
+    right: 3rem;
+    z-index: 100;
+  }
+  
+  .img-container-aws-desktop {
+    height: 24rem !important;
+  }
+  .text-container-app {
+    top: 2rem !important;
+    left: 6rem !important;
+  }
+
+  .img-container-app-desktop {
+    height: 24rem !important;
+  }
+  .customer-img-wrapper {
+    width: 15rem;
+    margin: 0 auto;
+  }
+  .customer-text-wrapper {
+    padding-top: 0px;
+    font-size: 1.25rem;
+  }
+  .customer-review {
+    margin: 4rem 2rem;
+    h3 {
+      margin: 0px 0px;
+    }
+  }
+  .text-xs-center {
+    text-align: start;
+  }
+  .tech-title {
+    text-align: start;
+  }
+  .customer-designation {
+    font-size: 0.875rem;
+    padding-right: 5rem;
+    line-height: 1.125rem;
+  }
+  .tech-stack-icon-text {
+    margin-top: 1rem;
+  }
+  .tech-stack{
+    width: 14rem;
+    font-size: 1.2rem;
+    line-height: 1.3125rem;
+  }
+  .tech-stack-cloud {
+    width: 14rem;
+    font-size: 1.2rem;
+    line-height: 1.3125rem;
+  }
+  .deliver-image {
+    margin-top: 3rem;
+  }
+  .banner-sub-text {
+    width: 30rem;
+  }
+  .tech-responsive-row-none{
+    display: none !important;
+  }
+}
+// between >769px & <=1024px
+@include media(">tablet", "<=desktop-sm") {
+  .circles-animation-xcbg {
+    top: 7rem;
+    right: 1rem;
+    z-index: 100;
+  }
+  .circle-design {
+    right: 2rem;
+    top: 6.125rem;
+    position: absolute;
+  }
+  .text-container {
+    top: 2rem !important;
+    right: 1rem !important;
+  }
+
+  .img-container-aws-desktop {
+    height: 24rem !important;
+  }
+  .text-container-app {
+    top: 2rem !important;
+    left: 6rem !important;
+  }
+
+  .img-container-app-desktop {
+    height: 24rem !important;
+  }
+  .customer-img-wrapper {
+    width: 15rem;
+    margin: 0 auto;
+  }
+  .customer-text-wrapper {
+    text-align: start;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 0;
+  }
+  .customer-review {
+    margin: 4rem 2rem;
+    h3 {
+      margin: 0px 0px;
+    }
+  }
+  .text-xs-center {
+    text-align: start;
+  }
+  .tech-title {
+    text-align: start;
+  }
+  .customer-designation {
+    font-size: 0.875rem;
+    padding-right: 5rem;
+    line-height: 1.125rem;
+  }
+  .tech-stack-icon-text {
+    margin-top: 1rem;
+  }
+  .tech-stack-cloud {
+    width: 14rem;
+    font-size: 1.2rem;
+    line-height: 1.3125rem;
+  }
+  .deliver-image {
+    margin-top: 5rem;
+  }
+  .banner-sub-text {
+    width: 23rem;
+  }
+  .card-box {
+    width: 18rem;
+    padding: 0.938rem 1.563rem;
+
+    .quality-delivered-card-description {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+  .tech-stack {
+    margin: 1.375rem 1.688rem;
+    font-size: 1.2rem;
+    line-height: 1.3125rem;
+  }
+  .tech-responsive-none{
+    display: none;
+  }
+}
+
+// between >576px & <=769px
+@include media(">tablet-sm", "<=tablet") {
+  h5 {
+    font-size: 0.8rem !important;
+    line-height: 1rem !important;}
+  .customer-review {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .customer-img-wrapper {
+    width: 9rem;
+    margin: 0 auto;
+  }
+  .customer-text-wrapper {
+    text-align: start;
+    font-family: "Lato-Regular" !important;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 0;
+  }
+  .img-container-aws-desktop {
+    height: 18rem !important;
+  }
+  .img-container-app-desktop {
+    height: 18rem !important;
+  }
+  .text-container {
+    top: 2rem !important;
+    right: 0rem !important;
+    h2 {
+      font-size: 1.75rem;
+    }
+    h5 {
+      font-size: 1.125rem;
+      padding: 0;
+      margin: 5px 0;
+    }
+    span {
+      margin: 5px 0;
+    }
+  }
+  .text-container-app {
+    top: 2rem !important;
+    left: 3rem !important;
+    h2 {
+      font-size: 1.75rem;
+    }
+    h5 {
+      font-size: 1.125rem;
+      padding: 0;
+      margin: 5px 0;
+    }
+    span {
+      margin: 5px 0;
+    }
+  }
+  .customer-img-wrapper {
+    width: 15rem;
+    margin: 0 auto;
+  }
+  .customer-review {
+    margin: 4rem 2rem;
+    text-align: left;
+  }
+  .text-xs-center {
+    text-align: start;
+  }
+  .tech-stack-cloud {
+    width: 12rem;
+    margin: 22px 10px;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+  .cloud-images {
+    height: 2.5rem;
+    width: 2.625rem;
+  }
+  .tech-stack {
+    margin: 2rem 1.3rem;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+  .tech-stack-icon-text {
+    margin-top: 10px;
+  }
+  .technology-images {
+    height: 2.5rem;
+    width: 3.625rem;
+    margin-left: 3rem;
+  }
+  .technology-images-left {
+    height: 2.5rem;
+    width: 3.625rem;
+  }
+  .tech-left-alignment {
+    margin-left: 2rem !important;
+  }
+  #footer-container .footer-text {
+    margin-right: 0;
+  }
+  .ready-response {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .customer-name {
+    font-size: 1.5rem;
+  }
+  .customer-designation {
+    font-size: 0.875rem;
+    padding-right: 5rem;
+    line-height: 1.125rem;
+  }
+  .banner-sub-text {
+    font-size: 0.875rem;
+  }
+  .banner-heading {
+    padding-right: 1rem;
+  }
+  .card-box {
+    width: 15rem;
+    padding: 15px 25px;
+  }
+  .quality-delivered-card-number {
+    font-size: 3rem !important;
+  }
+  .quality-delivered-card-title {
+    font-size: 0.875rem;
+    line-height: 0.625rem;
+  }
+  .quality-delivered-card-description {
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+  }
+  .deliver-image {
+    margin-top: 3rem;
+  }
+  .color-rate {
+    width: 0.875rem !important;
+    height: 0.875rem !important;
+  }
+  .tech-responsive-none{
+    display: none;
+  }
+}
+
+// between >425px & <=576px
+@include media(">phone", "<=tablet-sm") {
+  .customer-review {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .customer-img-wrapper {
+    width: 9rem;
+    margin: 0 auto;
+  }
+  .customer-text-wrapper {
+    text-align: start;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .img-container-aws-desktop {
+    height: 18rem !important;
+  }
+  .img-container-app-desktop {
+    height: 18rem !important;
+  }
+  .text-container {
+    top: 2rem !important;
+    right: 0rem !important;
+    h2 {
+      font-size: 1.75rem;
+    }
+    h5 {
+      font-size: 1.125rem;
+      padding: 0;
+      margin: 5px 0;
+    }
+    span {
+      margin: 5px 0;
+    }
+  }
+  .text-container-app {
+    top: 2rem !important;
+    left: 3rem !important;
+    h2 {
+      font-size: 1.75rem;
+    }
+    h5 {
+      font-size: 1.125rem;
+      padding: 0;
+      margin: 5px 0;
+    }
+    span {
+      margin: 5px 0;
+    }
+  }
+  .customer-img-wrapper {
+    width: 15rem;
+    margin: 0 auto;
+  }
+  .customer-review {
+    margin: 4rem 2rem;
+    text-align: left;
+  }
+  .text-xs-center {
+    text-align: start;
+  }
+  .tech-stack-cloud {
+    width: 17rem;
+    margin: 1.375rem 0.625rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+  .tech-stack {
+    margin: 1.375rem 0.75rem;
+    font-size: 1.4rem;
+    line-height: 1.3125rem;
+  }
+  .tech-stack-icon-text {
+    margin-top: 10px;
+  }
+  .technology-images {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .technology-images-left {
+    text-align: center;
+  }
+  .tech-left-alignment {
+    margin-left: 2rem !important;
+  }
+  #footer-container .footer-text {
+    margin-right: 0;
+  }
+  .ready-response {
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
+  }
+  .customer-name {
+    font-size: 1.5rem;
+  }
+  .customer-designation {
+    font-size: 0.875rem;
+    padding-right: 5rem;
+    line-height: 1.125rem;
+  }
+  .banner-sub-text {
+    font-size: 0.875rem;
+  }
+  .banner-heading {
+    padding-right: 1rem;
+  }
+  .card-box {
+    h5 {
+      font-size: 0.875rem;
+      line-height: 21px;
+      color: $xgrid-button-grey;
+      text-align: center;
+    }
+    h4 {
+      font-size: 1.125rem;
+      text-align: center;
+    }
+    h1 {
+      text-align: center !important;
+      margin-bottom: 1.25rem;
+    }
+  }
+  .quality-delivered-card-number {
+    font-size: 3rem !important;
+  }
+  .quality-delivered-card-title {
+    font-size: 0.875rem;
+    line-height: 0.625rem;
+  }
+  .quality-delivered-card-description {
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+  }
+  .deliver-image {
+    margin-top: 3rem;
+  }
+  .color-rate {
+    width: 0.875rem !important;
+    height: 0.875rem !important;
+  }
+  .tech-responsive-row-none{
+    display: none !important;
+  }
+}
+// between >375px & <=425px
+@include media(">phone-sm", "<=phone") {
+  .customer-text-wrapper {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .customer-img-wrapper {
+    width: 15rem;
+    margin: 0 auto;
+  }
+  .customer-name {
+    font-size: 1.8rem;
+  }
+  .customer-designation {
+    font-size: 1.5rem;
+    color: $xgrid-button-grey;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .text-xs-center {
+    text-align: center;
+    padding-right: 0;
+  }
+  .customer-review {
+    margin: 4rem 0;
+    text-align: left;
+  }
+  .tech-stack-cloud {
+    width: 21rem;
+    margin: 5px 0px 22px 0px;
+    font-size: 1.5rem;
+  }
+  .cloud-images {
+    height: 2.7481rem;
+    width: 4.8rem;
+  }
+  .tech-stack {
+    margin: 1.875rem 0 0;
+    font-size: 1.7rem;
+    line-height: 1.75rem;
+  }
+  .technology-images {
+    height: 2.7481rem;
+    width: 4.8rem;
+    margin-left: 2rem;
+  }
+  .technology-images-left {
+    justify-content: center;
+    display: flex;
+  }
+  .tech-title {
+    text-align: center;
+  }
+  .container-py-5 {
+    padding: 0;
+  }
+  .explore-btn-mob {
+    margin-top: 3rem;
+  }
+  #footer-container .footer-text {
+    margin-right: 0;
+    text-align: justify;
+  }
+  .banner-heading {
+    padding-right: 0;
+  }
+  .color-rate {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+  .tech-responsive-row-none{
+    display: none !important;
+  }
+}
+// between >320px & <=375px
+@include media(">phone-xs", "<=phone-sm") {
+  .customer-text-wrapper {
+    font-family: "Lato-Regular";
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .customer-img-wrapper {
+    width: 15rem;
+    margin: 0 auto;
+  }
+  .customer-name {
+    font-size: 1.375rem;
+  }
+  .customer-designation {
+    font-size: 1.125rem;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    color: $xgrid-button-grey;
+  }
+  .text-xs-center {
+    text-align: center;
+    padding-right: 0;
+  }
+  .customer-review {
+    margin: 4rem 0;
+    text-align: left;
+  }
+  .tech-stack-cloud {
+    width: 20rem;
+    margin: 5px 0px 22px 0px;
+    font-size: 1.5rem;
+  }
+  .cloud-images {
+    height: 2.7481rem;
+    width: 4.8rem;
+  }
+  .tech-stack {
+    margin: 1.875rem 0 0;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .technology-images {
+    height: 2.7481rem;
+    width: 4.8rem;
+    margin-left: 2rem;
+  }
+  .technology-images-left {
+    justify-content: center;
+    display: flex;
+  }
+  .tech-title {
+    text-align: center;
+  }
+  .container-py-5 {
+    padding: 0;
+  }
+  .explore-btn-mob {
+    margin-top: 3rem;
+  }
+  #footer-container .footer-text {
+    margin-right: 0;
+    text-align: justify;
+  }
+  .banner-heading {
+    padding-right: 0;
+  }
+  .color-rate {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+  .tech-responsive-row-none{
+    display: none !important;
+  }
+}
+
+@include media('<=phone') {
+  .quality-delivered-card-title {
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 24px;
+  }
+  .card-box {
+    h5 {
+      font-size: 0.875rem;
+      line-height: 21px;
+      color: $xgrid-button-grey;
+      text-align: center;
+    }
+    h1 {
+      text-align: center !important;
+    }
+  }
+  .customer-text-wrapper {
+    font-family: "Lato-Regular" !important;
+    text-align: center;
+    font-size: 1rem !important;
+    line-height: 1.3125rem;
+  }
+  .banner-sub-text {
+    font-family: "Lato-Regular" !important;
+    font-weight: 400;
+    color: $xgrid-button-grey;
+    line-height: 133%;
+    font-size: 1.125rem !important;
+    text-align: left;
+  }
+  .customer-review {
+    margin: 2rem 0rem;
+    text-align: left;
+    padding: 0; 
+  }
+  .customer-img-wrapper {
+    width: 10rem;
+    margin: 0 auto;
+  }
+  .customer-name {
+    font-size: 1.375rem;
+    text-align: center;
+  }
+  .customer-designation {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: $xgrid-button-grey;
+    text-align: center;
+  }
+}
+
+@include media("<phone-xs") {
+  #deliver-quality {
+    .container-fluid {
+      padding-left: 5rem;
+    } 
+  }
+  .customer-text-wrapper {
+    font-family: "Lato-Regular" !important;
+    text-align: center;
+    font-size: 1rem !important;
+    line-height: 1.3125rem;
+  }
+  .customer-img-wrapper {
+    width: 10rem;
+    margin: 0 auto;
+  }
+  .customer-review {
+    margin: 2rem 0rem;
+    text-align: left;
+  }
+  .customer-name {
+    font-size: 1.375rem;
+    text-align: center;
+  }
+  .customer-designation {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: $xgrid-button-grey;
+    text-align: center;
+  }
+}
+  .delivery-title {
+  font-size: 3.5rem !important;
+  line-height: 3.5rem;
+
+  }
+  .delivery-sub-title {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  .delivery-desc {
+    font-size: 1rem !important;
+    line-height: 1.2rem !important;
+  }
+  .deliver-image {
+    max-width: 42rem
+  }
+  .technology-title {
+    line-height: 5.25rem;
+  }
+  .row {
+    margin: auto !important;
+  }
+  

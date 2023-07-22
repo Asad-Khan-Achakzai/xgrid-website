@@ -1,0 +1,87 @@
+/*
+ Copyright (c) 2022, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+@import './theme.scss';
+
+.purple-bg {
+  background-color: $xgrid-purple;
+}
+.white-bg {
+  background-color: $xgrid-white;
+}
+.light-grey-bg {
+  background-color: $xgrid-light-grey;
+}
+.color-white {
+  color: $xgrid-white;
+}
+.color-black {
+  color: $xgrid-black;
+}
+.color-purple {
+  color: $xgrid-purple !important;
+}
+.color-grey {
+  color: $xgrid-button-grey !important;
+}
+.color-cod-grey {
+  color: $xgrid-black;
+}
+.color-dark-grey {
+  color: $xgrid-dark-grey !important;
+}
+.color-green {
+  color: $xgrid-green;
+}
+.color-forest-green {
+  color: $xgrid-forest-green;
+}
+.pastel-green-bg {
+  background: $xgrid-pastel-green;
+}
+.color-pastel-green {
+  color: $xgrid-pastel-green;
+}
+.darker-white-bg {
+  background: $xgrid-darker-white;
+}
+.dark-blue-bg {
+  background: $xgrid-dark-blue;
+}
+.light-black-bg {
+  background: $xgrid-black;
+}
+.color-black-bg {
+  background-color: $xgrid-black;
+}
+.color-dark-grey-bg {
+  background-color: $xgrid-black;
+}
+.color-white-font {
+  color: $xgrid-white !important;
+}
+.color-green-imp {
+  color: $xgrid-green !important;
+}
+.light-grey {
+  color: $xgrid-lighter-grey;
+}
+.dark-purple-bg {
+  background: $xgrid-dark-purple;
+}
+.light-grey-bg-imp {
+  background-color: $xgrid-light-grey !important;
+}

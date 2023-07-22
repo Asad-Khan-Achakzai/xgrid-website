@@ -1,0 +1,62 @@
+/*
+ Copyright (c) 2022, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+// Helpers imports
+import { getCanonicalUrl } from '../helpers/string';
+
+// Constants imports
+import constants from '../constants/constants';
+
+// Third party imports
+import { NextSeo } from 'next-seo';
+
+/**
+ * Component for adding meta tags for each page
+ * @param {string} title
+ * @param {string} description
+ * @param {string} imgUrl
+ * @returns component
+ */
+const MetaTags = ({ title, description, imgUrl }) => {
+  return (
+    <NextSeo
+      noindex={
+        process.env.NEXT_PUBLIC_ENVIRONMENT === 'development' ? true : false
+      }
+      nofollow={
+        process.env.NEXT_PUBLIC_ENVIRONMENT === 'development' ? true : false
+      }
+      title={title}
+      description={description}
+      openGraph={{
+        url: getCanonicalUrl(),
+        title: title,
+        description: description,
+        images: [
+          {
+            url: imgUrl,
+            width: 800,
+            height: 600,
+            alt: 'Thumbnail image',
+          },
+        ],
+        site_name: constants.siteName,
+      }}
+    />
+  );
+};
+
+export default MetaTags;

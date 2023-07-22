@@ -1,0 +1,165 @@
+/*
+ Copyright (c) 2022, Xgrid Inc, http://xgrid.co
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+*/
+
+.xt-circles-animation-wrapper {
+  top: -10rem;
+  right: 6rem;
+  z-index: 100;
+  position: absolute;
+}
+.ls-circles-animation-wrapper {
+  top: -44rem;
+  right: 6rem;
+  z-index: 100;
+  width: 330px;
+  position: absolute;
+}
+.lsb-circles-animation-wrapper {
+  top: -25rem;
+  transform: rotate(180deg);
+  z-index: 100;
+  width: 330px;
+  position: absolute;
+}
+.black-line-diagonal-animation-wrapper {
+  right: 10rem;
+  z-index: 100;
+  top: 14rem;
+}
+.purple-line-diagonal-animation-wrapper {
+  right: 31rem;
+  z-index: 100;
+}
+.rotating-text-line-top-animation {
+  top: -5rem;
+  right: 3rem;
+}
+.rotating-text-line-bottom-animation {
+  bottom: -4rem;
+  left: 3rem;
+}
+
+//Media Queries
+@include media('>1700px', '<=desktop-xl') {
+  .rotating-text-line-top-animation {
+    top: -3rem;
+  }
+  .circles-animation-wrapper {
+    top: 5rem;
+    right: 2rem;
+    z-index: 100;
+    max-width: 16rem;
+    overflow: hidden;
+  }
+}
+
+@include media('>desktop-lg', '<=1700px') {
+  .circles-animation-wrapper {
+    top: 7rem;
+    right: 2.4rem;
+    z-index: 100;
+    max-width: 13rem;
+    overflow: hidden;
+  }
+}
+
+@include media('>desktop-lg', '<=desktop-xl') {
+  .rotating-text-line-top-animation {
+    top: -3rem;
+  }
+}
+@include media('>desktop-md', '<=desktop-lg') {
+  .rotating-text-line-top-animation {
+    top: -3rem;
+  }
+  .circles-animation-wrapper {
+    top: -1rem;
+    right: 0rem;
+    z-index: 100;
+    max-width: 16rem;
+    overflow: hidden;
+  }
+}
+@include media('>desktop-sm', '<=desktop-md') {
+  .rotating-text-line-top-animation {
+    top: -3rem;
+  }
+
+  .circles-animation-wrapper {
+    top: -7rem;
+    right: -0.6rem;
+    z-index: 100;
+    max-width: 16rem;
+    overflow: hidden;
+    max-height: -12rem !important;
+    transform: scale(0.6);
+  }
+}
+@include media('>tablet', '<=desktop-sm') {
+  .circles-animation-wrapper {
+    top: 9rem;
+    right: -1.6rem;
+    z-index: 100;
+    max-width: 10rem;
+    overflow: hidden;
+  }
+  .black-line-diagonal-animation-wrapper {
+    top: 33rem;
+    right: 0rem;
+  }
+  .purple-line-diagonal-animation-wrapper {
+    top: 36rem;
+    right: 31rem;
+  }
+  .rotating-text-line-bottom-animation {
+    bottom: -12%;
+    left: 0rem;
+  }
+  .rotating-text-line-top-animation {
+    top: -5rem;
+    right: 0rem;
+  }
+  .xt-circles-animation-wrapper {
+    top: -2rem;
+    right: 6rem;
+  }
+  .lsb-circles-animation-wrapper {
+    top: -15rem;
+  }
+  .rotating-text-line-top-animation {
+    top: -3rem;
+  }
+}
+@include media('>tablet-sm', '<=tablet') {
+  .rotating-text-line-top-animation {
+    top: -4rem;
+  }
+}
+@include media('>phone', '<=tablet-sm') {
+  .rotating-text-line-top-animation {
+    top: -3rem;
+  }
+}
+
+//Sticky menu animation
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
